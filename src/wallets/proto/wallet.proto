@@ -1,0 +1,98 @@
+syntax = "proto3";
+
+package wallet;
+
+service WalletsService {
+  rpc getBalance (GetBalanceDto) returns (Wallet) {}
+  rpc getAllBalance (GetAllBalanceDto) returns (Wallets) {}
+  rpc createWallet (CreateWalletDto) returns (Wallet) {}
+  rpc changeBalance (ChangeBalanceDto) returns (TransactionHistoryDto) {}
+  rpc changeLocked (ChangeLockedDto) returns (TransactionHistoryDto) {}
+  rpc rollbackWallet (RollbackWalletDto) returns (SuccessResponse) {}
+  rpc transferAsset (TransferAssetDto) returns (SuccessResponse) {}
+  rpc increasePoint (IncreasePointDto) returns (SuccessResponse) {}
+}
+
+message Wallet {
+  double userId = 1;
+  double assetId = 2;
+  double balance = 3;
+  double locked = 4;
+  double available = 5;
+}
+
+message Wallets {
+  repeated Wallet wallets = 1;
+}
+
+message GetBalanceDto {
+  double userId = 1;
+  double assetId = 2;
+}
+
+message GetAllBalanceDto {
+  double userId = 1;
+}
+
+message CreateWalletDto {
+  double userId = 1;
+  double assetId = 2;
+  int32 balance = 3;
+}
+
+message Metadata {
+  optional string result = 1;
+}
+
+message ChangeBalanceDto {
+  double userId = 1;
+  double assetId = 2;
+  double amount = 3;
+  double transactionType = 4;
+  optional Metadata metadata = 5;
+  optional string note = 6;
+}
+
+message ChangeLockedDto {
+  double userId = 1;
+  double assetId = 2;
+  double amount = 3;
+  double transactionType = 4;
+  optional Metadata metadata = 5;
+  optional string note = 6;
+}
+
+message IncreasePointDto {
+  double userId = 1;
+  int32 point = 2;
+  int32 pointPvP = 3;
+}
+
+message TransferAssetDto {
+  double senderId = 1;
+  double receiverId = 2;
+  int32 amount = 3;
+  double assetId = 4;
+  double transactionType = 5;
+}
+
+message TransactionHistoryDto {
+  double userId = 1;
+  double assetId = 2;
+  double transactionType = 3;
+  bool isMain = 4;
+  double moneyUse = 5;
+  double moneyBefore = 6;
+  double moneyAfter = 7;
+  string note = 8;
+  string hash = 9;
+  optional Metadata metadata = 10;
+}
+
+message RollbackWalletDto {
+  repeated TransactionHistoryDto transactionHistories = 1;
+}
+
+message SuccessResponse {
+  bool success = 1;
+}

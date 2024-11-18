@@ -1,0 +1,200 @@
+[
+  {
+    "_id": 1,
+    "title": "Daily Check-in",
+    "condition": "DAILY_CHECK_IN",
+    "icon": "CALENDAR_CHECK_ICON",
+    "isEnable": true,
+    "type": "DAILY",
+    "group": "HOPIUM",
+    "link": "https://hopium.dev",
+    "point": 250
+  },
+  {
+    "_id": 2,
+    "title": "Invite a friend",
+    "condition": "INVITE_FRIEND",
+    "isEnable": true,
+    "icon": "USER_PLUS_ICON",
+    "type": "FIXED",
+    "group": "HOPIUM",
+    "link": "https://hopium.dev",
+    "point": 500
+  },
+  {
+    "_id": 3,
+    "title": "Join Hopium Telegram Group",
+    "condition": "JOIN_TELEGRAM_GROUP",
+    "isEnable": false,
+    "icon": "TELEGRAM_ICON",
+    "type": "ONE_TIME",
+    "group": "HOPIUM",
+    "link": "https://t.me/hopium_community",
+    "point": 500
+  },
+  {
+    "_id": 4,
+    "title": "Join Hopium Telegram Channel",
+    "condition": "SUBSCRIBE_TELEGRAM_CHANNEL",
+    "isEnable": true,
+    "icon": "TELEGRAM_ICON",
+    "type": "ONE_TIME",
+    "group": "HOPIUM",
+    "link": "https://t.me/hopium_community",
+    "point": 500
+  },
+  {
+    "_id": 5,
+    "title": "Subscribe to HOPIUM X",
+    "condition": "SUBSCRIBE_TWITTER",
+    "isEnable": true,
+    "icon": "TWITTER_ICON",
+    "type": "ONE_TIME",
+    "group": "HOPIUM",
+    "link": "https://x.com/realHopiumTon",
+    "point": 1000
+  },
+  {
+    "_id": 6,
+    "title": "Retweet this post",
+    "condition": "SUBSCRIBE_TWITTER",
+    "isEnable": true,
+    "icon": "TWITTER_ICON",
+    "type": "ONE_TIME",
+    "group": "HOPIUM",
+    "link": "https://x.com/realHopiumTON/status/1836255937537151117",
+    "point": 500
+  },
+  {
+    "_id": 7,
+    "title": "Connect TON Wallet",
+    "condition": "CONNECT_TON_WALLET",
+    "isEnable": true,
+    "icon": "TON_ICON",
+    "type": "ONE_TIME",
+    "group": "HOPIUM",
+    "link": "",
+    "point": 500
+  },
+  {
+    "_id": 8,
+    "title": "Win a battle in PvP mode",
+    "condition": "WIN_PVP_BATTLE",
+    "isEnable": true,
+    "icon": "PVP_ICON",
+    "type": "ONE_TIME",
+    "group": "HOPIUM",
+    "link": "https://t.me/hopiumtonchat/3",
+    "point": 500
+  },
+  {
+    "_id": 9,
+    "title": "Subcribe to Kaia Play X",
+    "condition": "AFFILIATE_CLICK",
+    "isEnable": true,
+    "icon": "TWITTER_ICON",
+    "type": "PARTNER",
+    "group": "HOPIUM",
+    "link": "https://x.com/kaiaplay",
+    "point": 500
+  },
+  {
+    "_id": 10,
+    "title": "Join Kaia Play Telegram Channel",
+    "condition": "AFFILIATE_CLICK",
+    "isEnable": true,
+    "icon": "TELEGRAM_ICON",
+    "type": "PARTNER",
+    "group": "HOPIUM",
+    "link": "https://t.me/KaiaplayChannel",
+    "point": 500
+  },
+  {
+    "_id": 11,
+    "title": "Have fun with Kaia Play",
+    "condition": "AFFILIATE_CLICK",
+    "isEnable": true,
+    "icon": "KAIA_ICON",
+    "type": "PARTNER",
+    "group": "HOPIUM",
+    "link": "https://t.me/kaiaplaybot/app?startapp=ref-o06yy66g3wv2yxt",
+    "point": 1000
+  },
+  {
+    "_id": 12,
+    "title": "Retweet this post",
+    "condition": "SUBSCRIBE_TWITTER",
+    "isEnable": true,
+    "icon": "TWITTER_ICON",
+    "type": "ONE_TIME",
+    "group": "HOPIUM",
+    "link": "https://x.com/realHopiumTON/status/1836255937537151117",
+    "point": 500
+  },
+  {
+    "_id": 13,
+    "title": "1 daily prediction",
+    "condition": "ONE_FORECAST",
+    "isEnable": true,
+    "icon": "CALENDAR_CHECK_ICON",
+    "type": "DAILY",
+    "group": "LUCKY",
+    "link": "",
+    "point": 1
+  },
+  {
+    "_id": 14,
+    "title": "3 daily predictions",
+    "condition": "THREE_FORECAST",
+    "isEnable": true,
+    "icon": "CALENDAR_CHECK_ICON",
+    "type": "DAILY",
+    "group": "LUCKY",
+    "link": "",
+    "point": 1
+  },
+  {
+    "_id": 15,
+    "title": "5 daily predictions",
+    "condition": "FIVE_FORECAST",
+    "isEnable": true,
+    "icon": "CALENDAR_CHECK_ICON",
+    "type": "DAILY",
+    "group": "LUCKY",
+    "link": "",
+    "point": 1
+  },
+  {
+    "_id": 16,
+    "title": "Win a battle in PvP mode",
+    "condition": "WIN_PVP_BATTLE",
+    "isEnable": true,
+    "icon": "PVP_ICON",
+    "type": "ONE_TIME",
+    "group": "LUCKY",
+    "link": "https://t.me/hopiumtonchat/3",
+    "point": 1
+  },
+  {
+    "_id": 17,
+    "title": "Daily Check-in",
+    "condition": "DAILY_CHECK_IN",
+    "icon": "CALENDAR_CHECK_ICON",
+    "isEnable": true,
+    "type": "DAILY",
+    "group": "LUCKY",
+    "link": "",
+    "point": 1
+  },
+  {
+    "_id": 18,
+    "title": "Invite a friend",
+    "condition": "INVITE_FRIEND",
+    "isEnable": true,
+    "icon": "USER_PLUS_ICON",
+    "type": "FIXED",
+    "group": "LUCKY",
+    "link": "https://hopium.dev",
+    "point": 1
+  }
+]

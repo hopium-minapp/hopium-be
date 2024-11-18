@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  hopium-be:
+    image: hopium-be
+    restart: always
+    build: .
+    ports:
+      - '127.0.0.1:3001:${PORT:-3000}'
+    volumes:
+      - ./.env:/usr/src/app/.env
+    environment:
+      - SCHEDULES_ENABLED=true
+      - TELEGRAM_POLLING=true
+    networks:
+      - hopium
+
+networks:
+  hopium:
+    external: true
